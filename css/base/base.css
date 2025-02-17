@@ -1,0 +1,16 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+   background-color: #E0E0E0; 
+   font-family: "Montserrat", serif;
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+}
+
