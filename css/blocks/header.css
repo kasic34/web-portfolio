@@ -1,0 +1,70 @@
+.header{
+    position: relative;
+    height: 100vh;
+    background-image: image-set(
+        url(./../../img/header/ШАПКА.jpg) 1x,
+        url(./../../img/header/ШАПКА@2x.jpg) 2x
+    );
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.header-title{
+    font-size: clamp(2rem, 1rem + 5vw, 3.5rem);
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header-dasc{
+    font-size: clamp(0.875rem, 0.792rem + 0.42vw, 1rem);
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 150%;
+    width: 300px;
+    text-align: center;
+    letter-spacing: 0,2em;
+    text-transform: uppercase;
+}
+
+.header-img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.header-word{
+    padding: 70px 0 30px;
+}
+
+.header-title-word{
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 130%;
+    text-align: center;
+    color: #000;
+}
+
+
+@media (max-width: 600px){
+    .header-title{
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:400px){
+    .header{
+        background-position: -300px 0px;
+    }
+}
+
